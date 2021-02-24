@@ -1,0 +1,11 @@
+.header {
+    $main-color: #fff;
+    &__inner {
+        min-height: 56px;
+        display: flex;
+    }
+}
+
+.container {
+    padding: 0 20px;
+}

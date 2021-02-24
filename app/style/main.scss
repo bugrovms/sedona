@@ -1,0 +1,8 @@
+//тут подключаем файлы SCSS
+@import "sass/variables";
+@import "sass/reset";
+@import "sass/header";
+
+body {
+    min-width: 320px;
+}
