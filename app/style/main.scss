@@ -3,5 +3,10 @@
 @import "sass/reset";
 @import "sass/body";
 @import "sass/header";
+@import "sass/container";
 @import "sass/main-image";
 @import "sass/nav";
+
+.hidden {
+    display: none;
+}
