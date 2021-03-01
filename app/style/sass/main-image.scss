@@ -1,3 +1,9 @@
 .main-image__img {
     width: 100%;
+    position: relative;
+}
+
+.main-image__title {
+    position: absolute;
+    left: 0;
 }
