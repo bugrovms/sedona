@@ -1,12 +1,15 @@
 //тут подключаем файлы SCSS
 @import "sass/variables";
+@import "sass/mixins";
 @import "sass/reset";
 @import "sass/body";
 @import "sass/header";
 @import "sass/container";
 @import "sass/main-image";
 @import "sass/nav";
+@import "sass/sedona-about";
+@import "sass/sedona-features";
 
 .hidden {
     display: none;
-}
+}  

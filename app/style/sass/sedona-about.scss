@@ -1,0 +1,27 @@
+.sedona-about {
+    &__inner {
+        margin: 32px 18px;
+        text-align: center;
+}
+
+    &__title {
+        text-transform: uppercase;
+        font-family: PT Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    &__subtitle {
+        margin-top: 44px;
+        text-transform: uppercase;
+        color: #3333;
+        font-family: 'PT Sans', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 26px;
+    }
+}
+

@@ -1,16 +1,51 @@
 .header {
     background-color: $main-color;
+    position: relative;
+    &:after{
+        content: ' ';
+        height: 57px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        background: url(../images/decor.svg) no-repeat center center;
+
+    }
     &__inner {
         min-height: 56px;
-        display: flex;
         justify-content: space-between;
         align-items: center;
+        @include tablet{
+            display: flex;
+        }
     }
+
     &__logo-link {
         position: absolute;
         left: 50%;
         top: 0;
-        margin-left: -50px;
+        transform: translateX(-50%);
         z-index: 1;
+    }
+
+    &__body{
+        padding-top: 90px;
+        padding-bottom: 90px;
+        background: url(../images/header.jpg) no-repeat center center/cover;
+
+        @include tablet{
+            padding-top: 77px;
+        }
+
+    }
+    
+   
+    &__img-title{
+        margin: 0 auto;
+        width: 282px;
+        display: block;
+        @include tablet{
+           width: 460px;
+        }
     }
 }
