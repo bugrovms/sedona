@@ -1,0 +1,30 @@
+.advantages {
+    text-align: center;
+    justify-content: space-between;
+    min-width: 320px;
+    position: relative;
+
+    &__item {
+        margin: 26px 11px 26px 69px;
+        position: relative;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    &__item-icon {
+        position: absolute;
+        top: -10px;
+        left: -50px;
+    }
+
+    &__item-text {
+        margin-top: 28px;
+        text-align: left;
+    }
+
+    &__item-title {
+        text-align: left;
+    }
+
+}

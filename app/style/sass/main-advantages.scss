@@ -1,0 +1,45 @@
+.main-advantages {
+    text-align: center;
+    justify-content: space-between;
+    min-width: 320px;
+    position: relative;
+
+    &__item {
+        position: relative;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 21px;
+        margin: 26px;
+    }
+
+    &__text {
+        margin-top: 28px;
+        text-align: center;
+    }
+
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__inner {
+        background-color: #81b3d2;
+        color: #fff;
+        padding: 55px 12px 39px;
+    }
+
+    &__subtitles {
+        margin-top: 28px;
+        text-transform: uppercase;
+    }
+
+    &__count {
+        margin-top: 15px;
+    }
+
+    &__pic {
+        vertical-align: top;
+        width: 100%;
+    }
+
+}
