@@ -1,0 +1,30 @@
+.footer {
+    &__inner {
+        margin-top: 39px;
+    }
+
+    &__title, &__social {
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__item {
+        margin-right: 6px;
+        margin-top: 33px;
+    }
+    
+    &__social-link {
+        text-decoration: none;
+    }
+
+    &__author {
+        margin-top: 45px;
+        text-align: center;
+    }
+
+    &__produced {
+        display: flex;
+        justify-content: center;
+    }
+
+}

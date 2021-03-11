@@ -5,12 +5,11 @@
 }
 
     &__title {
-        text-transform: uppercase;
-        font-family: PT Sans;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
+        font-family: 'PT Sans';
+        font-weight: 700;
+        font-size: 21px;
         line-height: 26px;
+        text-transform: uppercase;
     }
 
     &__subtitle {
