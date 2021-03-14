@@ -1,29 +1,6 @@
-.nav__btn {
-    width: 23px;
-    height: 22px;
-    background-color: #fff;
-    outline: none;
-    border: none;
-    position: absolute;
-    right: 20px;
-    top: 17px;
-}
-
-
 .nav__list-item {
     list-style-type: none;
     background-color: #81B3D2;
-}
-
-
-.nav__btn-item {
-    height: 4px;
-    display: block;
-    background-color: #81b3d2;
-}
-
-.nav__btn-item:nth-child(2) {
-    margin: 5px 0;
 }
 
 .nav__list-item{
@@ -54,7 +31,7 @@
     font-size: 18px;
     line-height: 40px;
     text-transform: uppercase;
-    padding: 14px 16px;
+    padding: 14px 10px;
     text-decoration: none;
     color: #fff;
     display: block;
@@ -71,10 +48,6 @@
 
     .nav {
         width: 100%;
-    }
-
-    .nav__btn {
-        display: none;
     }
 
     .nav__list {
