@@ -7,23 +7,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <svg style="display: none;">
+        <symbol viewBox="0 0 23 23" id="close-icon">
+            <path d="M22.2 2.8L19.4 0L11.1 8.3L2.8 0L0 2.8L8.3 11.1L0 19.4L2.8 22.2L11.1 13.9L19.4 22.2L22.2 19.4L13.9 11.1L22.2 2.8Z" fill="currentColor"/>
+        </symbol> 
+    </svg>
 </head>
 <body>
     <header class="header container">
             <div class="header__inner">
-                <div class="header__logo">
-                    <a class="header__logo-link" href="#">
-                        <picture>
-                            <source srcset="images/logotype-desktop.svg" media="(min-width: 1200px)">
-                            <source srcset="images/logotype-tablet.svg" media="(min-width: 768px)">
-                            <img src="images/logotype-mobile.svg" alt="Логотип"> 
-                        </picture>
-                    </a>
-                </div>
-                <nav class="nav container">
+                
+                <nav class="nav container ">
+                    <button class="nav__close">
+                        <svg class="nav__close-icon">
+                            <use xlink:href="#close-icon"></use>
+                        </svg>
+                    </button>
                     <ul class="nav__list">
                         <li class="nav__list-item">
-                            <a class="nav__list-item-link" href="#">Главная</a>
+                            <a class="nav__list-item-link nav__list-item-link--active" href="#">Главная</a>
                         </li>
                         <li class="nav__list-item">
                             <a class="nav__list-item-link" href="#">ФОТО И ВИДЕО</a>
@@ -37,11 +39,21 @@
                     </ul>
                 </nav>
             </div>
-            <button class="nav-btn">
-                <span class="nav-btn__item"></span>
-                <span class="nav-btn__item"></span>
-                <span class="nav-btn__item"></span>
-            </button>
+            <div class="header__logo">
+                <a class="header__logo-link" href="#">
+                    <picture>
+                        <source srcset="images/logotype-desktop.svg" media="(min-width: 1200px)">
+                        <source srcset="images/logotype-tablet.svg" media="(min-width: 768px)">
+                        <img src="images/logotype-mobile.svg" alt="Логотип"> 
+                    </picture>
+                </a>
+                <button class="nav-btn nav-btn--right">
+                    <span class="nav-btn__item"></span>
+                    <span class="nav-btn__item"></span>
+                    <span class="nav-btn__item"></span>
+                </button>
+            </div>
+            
             <div class="header__body">
                 <h1 class="hidden">Заголовок</h1>
                 <img class="header__img-title" src="images/sedona_title.svg" alt="Заголовок">
@@ -66,20 +78,28 @@
         </div>
     </div>
     <div class="advantages container">
-        <div class="advantages__item">
-            <img class="advantages__item-icon" src="../images/icon-house.svg" alt="иконка дома">
-            <h3 class="advantages__item-title">жилье</h3>
-            <p class="advantages__item-text">рекомендуем пожить в настоящем<br/> мотеле, все как в кино!</p>
-        </div>
-        <div class="advantages__item">
-            <img class="advantages__item-icon" src="../images/icon-gift.svg" alt="иконка подарка">
-            <h3 class="advantages__item-title">еда</h3>
-            <p class="advantages__item-text">всегда заказывай фирменный бургер,<br/> вы не разочаруетесь</p>
-        </div>
-        <div class="advantages__item">
-            <img class="advantages__item-icon" src="../images/icon-burger.svg" alt="иконка бургера">
-            <h3 class="advantages__item-title">сувениры</h3>
-            <p class="advantages__item-text">не только китайского,<br/> но и местного производства!</p>
+        <div class="advantages__inner">
+            <div class="advantages__item">
+                <img class="advantages__item-icon" src="../images/icon-house.svg" alt="иконка дома">
+                <div class="advantages__info">
+                    <h3 class="advantages__item-title">жилье</h3>
+                    <p class="advantages__item-text">рекомендуем пожить в настоящем<br/> мотеле, все как в кино!</p>
+                </div>
+            </div>
+            <div class="advantages__item">
+                <img class="advantages__item-icon" src="../images/icon-gift.svg" alt="иконка подарка">
+                <div class="advantages__info">
+                    <h3 class="advantages__item-title">еда</h3>
+                    <p class="advantages__item-text">всегда заказывай фирменный бургер,<br/> вы не разочаруетесь</p>
+                </div>
+            </div>
+            <div class="advantages__item">
+                <img class="advantages__item-icon" src="../images/icon-burger.svg" alt="иконка бургера">
+                <div class="advantages__info">
+                    <h3 class="advantages__item-title">сувениры</h3>
+                    <p class="advantages__item-text">не только китайского,<br/> но и местного производства!</p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="main-advantages container">

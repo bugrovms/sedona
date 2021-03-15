@@ -19,6 +19,17 @@
         }
     }
 
+    &__logo {
+        background-color: #fff;
+        padding: 17px 20px;  
+        position: relative;
+        display: flex;
+        @include tablet {
+            padding: 0;
+            position: static;
+        }
+    }
+
     &__logo-link {
         position: absolute;
         left: 50%;

@@ -4,7 +4,6 @@
     background-color: #fff;
     outline: none;
     border: none;
-    position: absolute;
     right: 20px;
     top: 17px;
 
@@ -16,6 +15,10 @@
 
     &__item:nth-child(2) {
         margin: 5px 0;
+    }
+
+    &--right {
+        margin-left: auto;
     }
 
     @include tablet{

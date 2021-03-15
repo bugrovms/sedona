@@ -1,30 +1,38 @@
 .advantages {
-    text-align: center;
-    justify-content: space-between;
-    min-width: 320px;
-    position: relative;
+
+    &__inner {
+        padding: 35px 18px;
+        @include tablet {
+            display: flex;
+            margin: 0 auto;
+        }
+    }
 
     &__item {
-        margin: 26px 11px 26px 69px;
-        position: relative;
+        display: flex;
+    }
+
+    &__info {
         text-transform: uppercase;
         font-size: 14px;
         line-height: 21px;
+        margin-bottom: 26px;
     }
 
     &__item-icon {
-        position: absolute;
-        top: -10px;
-        left: -50px;
+        margin-right: 12px;
+        flex-shrink: 0;
+        align-self: flex-start;
     }
 
     &__item-text {
-        margin-top: 28px;
         text-align: left;
     }
 
     &__item-title {
+        font-weight: 700;
         text-align: left;
+        margin-bottom: 28px;
     }
 
     @include tablet{

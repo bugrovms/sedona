@@ -6,7 +6,7 @@
     position: relative;
     
     &__inner {
-        padding: 55px 12px 39px;
+        padding: 71px 12px 39px;
         text-align: center;
         color: #fff;
         background-color: #81B3D2;
@@ -26,20 +26,25 @@
         margin-top: 15px;
     }
 
-    // &:after{
-    //     content: ' ';
-    //     height: 37px;
-    //     left: 0;
-    //     right: 0;
-    //     top: 0;
-    //     position: absolute;
-    //     background: url(../images/12.svg) no-repeat center center;
-    //     display: block;
-    // }
+    &:after{
+        content: ' ';
+        height: 37px;
+        left: 0;
+        right: 0;
+        top: 0;
+        position: absolute;
+        background: url(../images/decor-bottom.svg) no-repeat center center;
+        display: block;
+        @include tablet {
+            display: none;
+        }
+    }
 
     &__pic {
         vertical-align: top;
         width: 100%;
+        height: 260px;
+        object-fit: cover;
     }
 
     @media (min-width: 768px) {
