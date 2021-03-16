@@ -1,5 +1,6 @@
 //тут подключаем файлы SCSS
 @import "sass/variables";
+@import "sass/utilities";
 @import "sass/mixins";
 @import "sass/reset";
 @import "sass/body";
@@ -14,7 +15,3 @@
 @import "sass/main-advantages";
 @import "sass/sedona-search";
 @import "sass/footer";
-
-.hidden {
-    display: none;
-}  

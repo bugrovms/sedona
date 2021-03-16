@@ -11,20 +11,32 @@
     &__item {
         margin-right: 6px;
         margin-top: 33px;
+        background-color: #81B3D2;
+        width: 47px;
+        height: 48px;
+    }
+
+    &__social {
+        margin-bottom: 35px;
     }
     
     &__social-link {
         text-decoration: none;
     }
 
-    &__author {
-        margin-top: 45px;
-        text-align: center;
-    }
-
     &__produced {
         display: flex;
         justify-content: center;
+    }
+
+    &__icon {
+        align-items: center;
+        display: block;
+        margin-left: 12px;
+    }
+
+    &__author {
+        align-self: center;
     }
 
 }

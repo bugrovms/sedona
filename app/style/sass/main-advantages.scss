@@ -4,6 +4,12 @@
     min-width: 320px;
     position: relative;
 
+    &__container {
+        @include tablet {
+            display: flex;
+        }
+    }
+
     &__item {
         position: relative;
         text-transform: uppercase;

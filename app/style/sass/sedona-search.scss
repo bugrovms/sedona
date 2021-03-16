@@ -5,6 +5,9 @@
 
     &__text {
         margin-top: 33px;
+        @include tablet {
+            margin-bottom: 52px;
+        }
     }
     
     &__hotel {
@@ -29,6 +32,11 @@
         color: white;
         font-weight: 700;
         cursor: pointer;
+        @include tablet{
+            width: 458px;
+            height: 58px;
+            margin: 0 auto;
+        }
     }
 
     &__title {

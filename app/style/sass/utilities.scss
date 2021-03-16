@@ -1,0 +1,10 @@
+.hidden {
+    display: none;
+}   
+
+.visible-tablet { 
+    display: none;
+    // @include tablet {
+    //     display: block;
+    // }
+}
