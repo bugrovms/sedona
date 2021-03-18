@@ -1,31 +1,38 @@
 .advantages {
+    
+    &__item {
+        display: flex;
+        @include tablet {
+            display: inline-block;
+        }
+    }
 
     &__wrap {
         padding: 35px 21px;
-    }
-
-    @include tablet {
-
-        &__wrap {
+        @include tablet {
             display: flex;
-            margin: 0 auto;
+            justify-content: space-between;
         }
-    
-    }
-
-    &__item {
-        display: flex;
     }
 
     &__icon-box {
-        width: 40px;
-        height: 40px;
         margin-right: 12px;
+        @include tablet {
+            text-align: center;
+            margin-right: 0;
+        }
     }
 
     &__item-icon {
+        width: 40px;
+        height: 40px;   
         flex-shrink: 0;
         margin: 0 auto;
+        @include tablet {
+            height: 75px;
+            width: 75px;
+            margin-bottom: 26px;
+        }
     }
 
     &__info {
@@ -37,20 +44,17 @@
 
     &__item-text {
         text-align: left;
+        @include tablet {
+            text-align: center;
+        }
     }
 
     &__item-title {
         font-weight: 700;
         text-align: left;
         margin-bottom: 28px;
-    }
-
-    @include tablet{
-        display: flex;
-        
-        &__item-icon {
-            height: 75px;
+        @include tablet {
+            text-align: center;
         }
     }
-
 }

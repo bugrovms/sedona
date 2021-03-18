@@ -1,6 +1,11 @@
 .footer {
     &__inner {
         margin-top: 39px;
+        @include tablet {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
     }
 
     &__title, &__social {
@@ -8,20 +13,32 @@
         text-align: center;
     }
 
-    &__item {
-        margin-right: 6px;
+    &__social-icon {
+        
+    }
+
+    &__social {
+        margin-bottom: 35px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    &__social-link {
+        text-decoration: none;
+    }
+
+    &__social-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-top: 33px;
         background-color: #81B3D2;
         width: 47px;
         height: 48px;
     }
 
-    &__social {
-        margin-bottom: 35px;
-    }
-    
-    &__social-link {
-        text-decoration: none;
+    &__social-item:not(:last-child) {
+        margin-right: 6px;
     }
 
     &__produced {
