@@ -27,6 +27,14 @@
         text-decoration: none;
     }
 
+    &__social-item:hover {
+        background-color: #669EC0;
+    }
+
+    &__social-item:active {
+        background-color: #5496BD;
+    }
+
     &__social-item {
         display: flex;
         justify-content: center;

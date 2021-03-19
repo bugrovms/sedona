@@ -39,6 +39,19 @@
         }
     }
 
+    &__btn:hover {
+        background-color: #669EC0;
+    }
+
+    &__btn:active {
+        background-color: #5496BD;
+    }
+
+    &__btn:disabled {
+        background-color: #E5E5E5;
+    }
+
+
     &__title {
         text-transform: uppercase;
     }
