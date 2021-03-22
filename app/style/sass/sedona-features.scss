@@ -6,7 +6,7 @@
     position: relative;
     
     &__inner {
-        padding: 71px 12px 39px;
+        padding: 42px 32px;
         text-align: center;
         color: #fff;
         background-color: #81B3D2;
@@ -14,11 +14,13 @@
 
     &__title {
         text-transform: uppercase;
+        @include font(21px, 26px, 700);
     }
 
     &__subtitles {
         margin-top: 28px;
         text-transform: uppercase;
+        @include font(14px, 21px, 400);
     }
 
     &__count {

@@ -1,0 +1,36 @@
+.dignity {
+    
+    &__wrap {
+        text-align: center;
+        padding: 26px;
+        background-color: #EEEEEE;
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+            padding: 42px 40px;
+        }
+    }
+
+    &__item {
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        @include font(14px, 21px, 400);
+        @include tablet {
+            margin-bottom: 0;
+            font-family: 'PT Sans', sans-serif;
+        }
+    }
+
+    &__title {
+        @include font(21px, 26px, 700);
+        margin-bottom: 20px;
+    }
+
+    &__number {
+        margin-bottom: 34px;
+    }
+
+    &__item:last-child {
+        margin-bottom: 0;
+    }
+}
