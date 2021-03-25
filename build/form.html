@@ -52,7 +52,38 @@
                 <img class="header__img-title" src="images/sedona_title.svg" alt="Заголовок">
             </div>
     </header>
-    <h1>Привет новый МИРЪ!</h1>
-    <p>ПОДВАЛ САЙТА</p>
+    <section class="feedback container">
+        <div class="feedback__text">
+            <h1 class="feedback__text-title">Оставьте свой отзыв</h1>
+            <p class="feedback__text-info">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами достопримечательностях</p>
+        </div>
+    </section>
+    <section class="form container">
+        <form action="">
+            <div class="form__wrap">
+                <h2 class="form__title">Представьтесь:</h2>
+                <label class="form__label">Имя*:
+                    <input class="form__input-text" type="text" placeholder="Петр" required>
+                </label>
+                <label class="form__label">Фамилия*:
+                    <input class="form__input-text" type="text" placeholder="Иванов" required>
+                </label>
+                <label class="form__label">Отчество*:
+                    <input class="form__input-text" type="text" placeholder="Александрович" required>
+                </label>
+            </div>
+            <legend class="form__legend"><span class="form__legend--sticks">Контактная информация</span></legend>
+                <div class="form__contacts-wrapper">
+                    <label class="form__label">Контактный телефон*:
+                        <input class="form__input-text" type="text" placeholder="Введите телефон" required>
+                    </label>
+                </div>
+                <div class="form__contacts-wrapper">
+                    <label class="form__label">Электронная почта*:
+                        <input class="form__input-text" type="text" placeholder="Введите e-mail" required>
+                    </label>
+                </div>
+        </form>
+    </section>
 </body>
 </html>

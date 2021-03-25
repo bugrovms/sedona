@@ -33,4 +33,11 @@
     &__item:last-child {
         margin-bottom: 0;
     }
+
+    &__break {
+        display: none;
+        @include tablet {
+            display: block;
+        }
+    }
 }

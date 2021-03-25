@@ -83,12 +83,6 @@
     color: rgba(#fff, 0.3);
 }
 
-@media (min-width: $mobile) {
-    // .nav__list {
-    //     display: none;
-    // }
-}
-
 @media (min-width: $tablet) {
 
     .nav {
@@ -109,6 +103,7 @@
     .nav__list-item-link {
         text-decoration: none;
         color: #000;
+        background-color: transparent;
     }
 
     .nav__list-item-link:hover {
@@ -117,6 +112,7 @@
 
     .nav__list-item-link:active {
         color: rgba(#000, .3);
+        background-color: #fff;
     }
 
     .nav__list-item-link--active {
@@ -149,5 +145,13 @@
     .nav__list-item {
         width: 20%;
         text-align: center;
+    }
+
+    .nav__list-item-link {
+        color: #000;
+    }
+
+    .nav__list-item-link:hover {
+        color: #81B3D2;
     }
 }

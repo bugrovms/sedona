@@ -1,0 +1,20 @@
+.form {
+
+    &__wrap {
+        margin: 39px 20px;
+    }
+
+    &__title {
+        margin-bottom: 19px;
+        text-align: center;
+    }
+
+    &__label {
+        display: block;
+    }
+
+    &__input-text {
+        margin-bottom: 20px;
+        padding: 18px 22px 14px 22px;
+    }
+}
