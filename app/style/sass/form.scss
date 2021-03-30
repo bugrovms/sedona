@@ -25,13 +25,43 @@
         outline: none;
         border: none;
         margin-left: 14px;
+        width: 100%;
     }
 
     &__contacts {
         display: block;
     }
 
-    &__chekbox {
+    &__checkbox {
+        margin-bottom: 50px;
+    }
+
+    &__chekbox-item {
         display: block;
+    }
+
+    &__textarea {
+        display: block;
+    }
+
+    &__btn  {
+        width: 100%;
+        font-family: "PT Sans", Arial, Helvetica, sans-serif;
+        display: block;
+        font-size: 21px;
+        line-height: 26px;
+        text-transform: uppercase;
+        height: 58px;
+        background-color: #81b3d2;
+        border: none;
+        outline: none;
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+        @include tablet{
+            width: 458px;
+            height: 58px;
+            margin: 0 auto;
+        }
     }
 }

@@ -50,20 +50,23 @@
                     <input type="radio" name="" value="" class="form__input-radio">Затрудняюсь ответить
                 </label>
             <h2 class="form__title">посещенные достопримечательности:</h2>
-                <label class="form__chekbox">
+            <div class="form__checkbox">
+                <label class="form__chekbox-item">
                     <input type="checkbox" name="" value="">Мост Дьявола
                 </label>
-                <label class="form__chekbox">
+                <label class="form__chekbox-item">
                     <input type="checkbox" name="" value="">Гора-Колокол
                 </label>
-                <label class="form__chekbox">
+                <label class="form__chekbox-item">
                     <input type="checkbox" name="" value="">Слайд-парк
                 </label>
-                <label class="form__chekbox">
+                <label class="form__chekbox-item">
                     <input type="checkbox" name="" value="">Красные скалы
                 </label>
+            </div>
             <h2 class="form__title">Опишите свои эмоции:</h2>
-                <input type="texarea" value="Опишите подробно все свои восторги ">
+                <input class="form__textarea" type="texarea" value="Опишите подробно все свои восторги ">
+            <button class="form__btn">ОТПРАВИТЬ ОТЗЫВ</button>    
         </form>
     </section>
     @@include('views/footer.html')
