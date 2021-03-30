@@ -5,16 +5,33 @@
     }
 
     &__title {
-        margin-bottom: 19px;
+        margin-bottom: 40px;
         text-align: center;
     }
 
     &__label {
-        display: block;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        margin-bottom: 20px;
     }
 
     &__input-text {
         margin-bottom: 20px;
-        padding: 18px 22px 14px 22px;
+        padding: 18px 18px 14px;
+        background-color: #E7E5E5;
+        color: #000;
+        @include font(18px, 26px, 700);
+        outline: none;
+        border: none;
+        margin-left: 14px;
+    }
+
+    &__contacts {
+        display: block;
+    }
+
+    &__chekbox {
+        display: block;
     }
 }
