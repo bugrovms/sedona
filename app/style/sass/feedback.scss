@@ -1,7 +1,21 @@
 .feedback {
 
+    &__text-title {
+        @include font(18px, 26px, 700);
+        margin-bottom: 30px;
+        color: #000;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
     &__text {
         text-align: center;
-        margin: 36px 7px;
+        padding: 36px 7px;
+        @include font(14px, 24px);
+        color: #333;
+        text-transform: uppercase;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #E5E5E5;
+        margin-bottom: 20px;
     }
 }

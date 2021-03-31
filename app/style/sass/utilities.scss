@@ -4,7 +4,7 @@
 
 .visible-tablet { 
     display: none;
-    // @include tablet {
-    //     display: block;
-    // }
-}
+    @include tablet {
+        display: block;
+    }
+} 

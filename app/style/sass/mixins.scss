@@ -19,3 +19,7 @@
 @mixin font($font-size, $line-height, $weight: null, $font-family: $font-family){
     font: $weight #{$font-size}/#{$line-height} $font-family;
 }
+
+// использование
+// @include font(20px, 24px);
+// @include font(20px, 24px, 500, Verdana);
