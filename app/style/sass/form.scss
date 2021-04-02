@@ -106,10 +106,6 @@
         margin: 39px 20px;
     }
 
-    &__textarea {
-        display: block;
-    }
-
     &__options {
         padding: 27px 20px 31px;
     }
@@ -129,7 +125,7 @@
     }
 
     &__options-input:checked + &__options-label:after {
-        display: block;
+        transform: scale(1);
     }
 
     &__options-label {
@@ -147,6 +143,14 @@
         top: -10px;
     }
 
+    &__options-label:hover:before {
+        background-color: #E5E5E5;
+    }
+
+    &__options-label:active:before {
+        background-color: #D5D5D5;
+    }
+
     &__options-label:after {
         content: "";
         width: 18px;
@@ -156,7 +160,8 @@
         position: absolute;
         left: 14px;
         top: 4px;
-        display: none;
+        transform: scale(0);
+        transition: all 0.3s ease 0s;
     }
 
     &__checkbox {
@@ -169,23 +174,55 @@
         padding-left: 75px;
     }
 
+    &__checkbox-item:last-child {
+        margin-bottom: 0;
+    }
+
+    &__checkbox-input:checked + &__checkbox-label:before {
+        background: #F2F2F2 url(../images/tick.svg) no-repeat center center;
+        transform: scale(1);
+    }
+
     &__checkbox-input {
         display: none;
     }
 
     &__checkbox-label {
-
+        @include font(18px, 26px, bold);
     }
 
     &__checkbox-label:before {
         content: "";
         width: 46px;
         height: 46px;
-        background-color: #F2F2F2;
         position: absolute;
-        top: 0;
+        top: -15px;
         left: 0;
         border-radius: 5px;
+        background-color: #F2F2F2;
+	    transition: all 0.3s ease 0s;
+    }
+
+    &__checkbox-label:hover:before {
+        background-color: #E5E5E5;
+    }
+
+    &__checkbox-label:active:before {
+        background-color: #D5D5D5;
+    }
+
+    &__textarea {
+        width: 279px;
+        height: 180px;
+        resize: none;
+        margin-bottom: 51px;
+        padding: 13px 22px;
+        @include font(18px, 26px, bold);
+        outline: none;
+    }
+
+    &__wrap--border {
+        border-bottom: none;
     }
 
     &__btn  {
