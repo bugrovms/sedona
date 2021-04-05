@@ -71,6 +71,7 @@
 
     &__input-text:hover {
         background-color: #E5E5E5;
+        border-color: #E5E5E5;
     }
 
     &__input-text:focus {
@@ -219,6 +220,8 @@
         padding: 13px 22px;
         @include font(18px, 26px, bold);
         outline: none;
+        border: none;
+        background-color: #F2F2F2;
     }
 
     &__wrap--border {
