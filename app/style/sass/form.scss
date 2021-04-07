@@ -6,6 +6,12 @@
         margin-bottom: 20px;
     }
 
+    &__contacts {
+        @include tablet {
+            display: none;
+        }
+    }
+
     &__input--tel:after {
         content: "";
         width: 58px;
@@ -222,6 +228,31 @@
         outline: none;
         border: none;
         background-color: #F2F2F2;
+        width: 100%;
+    }
+
+    &__textarea:hover {
+        background-color: #E5E5E5;
+        border-color: #E5E5E5;
+    }
+
+    &__textarea:focus {
+        background-color: #fff;
+        border: 4px solid #E5E5E5;
+    }
+
+    &__textarea::-webkit-input-placeholder{
+        color: #000;
+    }
+
+    &__textarea:-moz-placeholder{
+        color: #000;
+        opacity: 1;
+    }
+
+    &__textarea:-moz-placeholder{
+        color: #000;
+        opacity: 1;
     }
 
     &__wrap--border {
@@ -247,5 +278,17 @@
             height: 58px;
             margin: 0 auto;
         }
+    }
+
+    &__btn:hover {
+        background-color: #669EC0;
+    }
+
+    &__btn:active {
+        background-color: #5496BD;
+    }
+
+    &__btn:disabled {
+        background-color: #E5E5E5;
     }
 }
