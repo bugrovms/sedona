@@ -1,5 +1,13 @@
 .form {
 
+    &__wrapper {
+        @include tablet {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+        }
+    }
+
     &__wrap {
         padding: 0 20px 25px;
         border-bottom: 1px solid #E5E5E5;
@@ -173,6 +181,17 @@
 
     &__checkbox {
         padding: 27px 20px 31px;
+    }
+
+    &__inner {
+        @include tablet {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        @include desktop {
+            justify-content: space-between;
+        }
     }
 
     &__checkbox-item {
