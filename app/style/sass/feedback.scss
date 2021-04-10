@@ -17,5 +17,12 @@
         padding-bottom: 16px;
         border-bottom: 1px solid #E5E5E5;
         margin-bottom: 20px;
+        @include tablet {
+            border-bottom: 0;
+            margin-bottom: 60px;
+            max-width: 434px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 }

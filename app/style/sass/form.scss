@@ -12,11 +12,8 @@
         padding: 0 20px 25px;
         border-bottom: 1px solid #E5E5E5;
         margin-bottom: 20px;
-    }
-
-    &__contacts {
         @include tablet {
-            display: none;
+            border-bottom: none;
         }
     }
 
@@ -44,8 +41,28 @@
         margin-bottom: 17px;
         text-align: center;
         text-transform: uppercase;
-        @include font(18px, 26px, 700);
+        @include font(21px, 26px, 700);
         color: #000;
+        @include tablet {
+            &--decor:before, &--decor:after {
+                content: '';
+                height: 1px;
+                background-color: #E7E5E5;
+                flex-grow: 1;
+            }
+            &--decor {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            &--decor:before {
+                margin-right: 60px;
+            }
+            &--decor:after {
+                margin-left: 60px;
+            }
+        }
     }
 
     &__label {
@@ -125,10 +142,57 @@
         padding: 27px 20px 31px;
     }
 
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+
+        &__options {
+            order: 1;
+            padding-left: 64px;
+            padding-top: 0;
+            border-right: 1px solid #DBDBDB;
+            padding-bottom: 0;
+            margin-bottom: 76px;
+        }
+        &__name {
+            order: 2;
+            padding-right: 64px;
+            padding-bottom: 0;
+            padding-left: 58px;
+            margin-bottom: 76px;
+        }
+        &__contacts {
+            order: 3;
+            width: 100%;
+        }
+        &__checkbox {
+            order: 4;
+        }
+        &__area {
+            order: 5;
+            width: 100%;
+        }
+
+        &__options, &__name {
+            width: 50%;
+            text-align: left;
+        }
+        &__options &__title {
+            margin-bottom: 34px;
+            height: 52px;
+        }
+        &__name &__title {
+            margin-bottom: 34px;
+            height: 52px;
+        }
+    }    
+
     &__options-item{
-        margin-bottom: 43px;
+        margin-bottom: 20px;
         padding-left: 70px;
         position: relative;
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 
     &__options-item:last-child{
@@ -155,7 +219,8 @@
         border-radius: 50%;
         position: absolute;
         left: 0;
-        top: -10px;
+        top: 50%;
+        margin-top: -23px;
     }
 
     &__options-label:hover:before {
@@ -174,20 +239,32 @@
         border-radius: 50%;
         position: absolute;
         left: 14px;
-        top: 4px;
+        top: 50%;
+        margin-top: -9px;
         transform: scale(0);
         transition: all 0.3s ease 0s;
     }
 
     &__checkbox {
         padding: 27px 20px 31px;
+        @include tablet {
+            width: 100%;
+            margin-bottom: 7px;
+        }
+    }
+
+    &__checkbox &__title {
+        @include tablet {
+            margin-bottom: 47px;
+        }
     }
 
     &__inner {
         @include tablet {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 460px;
+            margin: 0 auto;
         }
         @include desktop {
             justify-content: space-between;
@@ -198,6 +275,11 @@
         position: relative;
         margin-bottom: 54px;
         padding-left: 75px;
+        @include tablet {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-bottom: 32px;
+        }
     }
 
     &__checkbox-item:last-child {
@@ -222,7 +304,7 @@
         width: 46px;
         height: 46px;
         position: absolute;
-        top: -15px;
+        top: 0;
         left: 0;
         border-radius: 5px;
         background-color: #F2F2F2;
@@ -239,7 +321,7 @@
 
     &__textarea {
         width: 279px;
-        height: 180px;
+        height: 160px;
         resize: none;
         margin-bottom: 51px;
         padding: 13px 22px;
@@ -248,6 +330,10 @@
         border: none;
         background-color: #F2F2F2;
         width: 100%;
+    }
+
+    &__area &__title {
+        margin-bottom: 55px;
     }
 
     &__textarea:hover {
