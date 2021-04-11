@@ -76,7 +76,7 @@ function serve() {
     // watch('app/js/**/*.js', series(js)).on('change', sync.reload)
     watch('app/img/**/*', series(img)).on('change', sync.reload)
     watch('app/fonts/**/*', series(fonts)).on('change', sync.reload)
-};
+}; 
 
 
 exports.build = series(clear, scss, img, fonts, html)
