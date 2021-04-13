@@ -72,7 +72,7 @@ function serve() {
     });
 
     watch('app/html/**/*.html', series(html)).on('change', sync.reload)
-    watch('app/scss/**/*.scss', series(scss)).on('change', sync.reload)
+    watch('app/style/**/*.scss', series(scss)).on('change', sync.reload)
     // watch('app/js/**/*.js', series(js)).on('change', sync.reload)
     watch('app/img/**/*', series(img)).on('change', sync.reload)
     watch('app/fonts/**/*', series(fonts)).on('change', sync.reload)

@@ -80,15 +80,16 @@
                 </div>
                 <div class="form__wrap form__contacts">
                     <h2 class="form__title form__title--decor">Контактная информация<h2></h2>
+                    <div class="form__contacts-wrap">
                         <div class="form__input form__input--column form__input--tel form__input--icon">
                             <label for="tel" class="form__label">Контактный телефон*:</label>
                             <input id="tel" class="form__input-text" type="tel" placeholder="Введите телефон" required>
                         </div>
                         <div class="form__input form__input--column form__input--email form__input--icon">
                             <label for="e-mail" class="form__label">Электронная почта*:</label>
-                            <input id="e-mail" class="form__input-text" type="email" placeholder="Введите e-mail"
-                                required>
+                            <input id="e-mail" class="form__input-text" type="email" placeholder="Введите e-mail" required>
                         </div>
+                    </div>
                 </div>
                 <div class="form__wrap form__options">
                     <h2 class="form__title">Ваше общее впечатление:</h2>
@@ -130,12 +131,15 @@
             <div class="form__wrap form__area form__wrap--border">
                 <h2 class="form__title form__title--decor">Опишите свои эмоции:</h2>
                 <textarea class="form__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
-                <button class="form__btn">ОТПРАВИТЬ ОТЗЫВ</button>
+                <div class="form__wrap-btn">
+                    <button class="form__btn">ОТПРАВИТЬ ОТЗЫВ</button>
+                    <p class="form__help">*- Обязательные поля</p>
+                </div>
             </div>
         </form>
     </section>
     <div class="footer container">
-        <div class="footer__inner">
+        <div class="form__wrap footer__inner">
             <h2 class="footer__title">
                 #visitSEDONA
             </h2>

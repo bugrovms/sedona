@@ -14,6 +14,7 @@
         margin-bottom: 20px;
         @include tablet {
             border-bottom: none;
+            justify-content: space-between;
         }
     }
 
@@ -41,7 +42,7 @@
         margin-bottom: 17px;
         text-align: center;
         text-transform: uppercase;
-        @include font(21px, 26px, 700);
+        @include font(18px, 26px, 700);
         color: #000;
         @include tablet {
             &--decor:before, &--decor:after {
@@ -185,7 +186,33 @@
             margin-bottom: 34px;
             height: 52px;
         }
-    }    
+    }
+
+    @include desktop {
+        
+        &__checkbox &__inner {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        &__contacts-wrap {
+            display: flex;
+            justify-content: center;
+        }
+        
+        &__input--column {
+            margin-right: 79px;
+        }
+
+        &__input--tel, &__input--email {
+            display: flex;
+        }
+
+        &__input--column:last-child {
+            margin-right: 0;
+        }
+    }
 
     &__options-item{
         margin-bottom: 20px;
@@ -330,6 +357,7 @@
         border: none;
         background-color: #F2F2F2;
         width: 100%;
+        border: 4px solid transparent;
     }
 
     &__area &__title {
@@ -364,6 +392,21 @@
         border-bottom: none;
     }
 
+    &__help {
+        display: none;
+        @include tablet {
+            display: block;
+        }
+    }
+
+    &__wrap-btn {
+        @include tablet {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
     &__btn  {
         width: 100%;
         font-family: "PT Sans", Arial, Helvetica, sans-serif;
@@ -379,9 +422,12 @@
         font-weight: 700;
         cursor: pointer;
         @include tablet{
-            width: 458px;
+            max-width: 324px;
             height: 58px;
-            margin: 0 auto;
+            // margin-left: 0 auto;
+        }
+        @include desktop {
+            max-width: 480px;
         }
     }
 
