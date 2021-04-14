@@ -56,6 +56,9 @@
                 align-items: center;
                 text-align: center;
                 margin-bottom: 20px;
+                @include desktop {
+                    margin-bottom: 71px;
+                }
             }
             &--decor:before {
                 margin-right: 60px;
@@ -95,10 +98,6 @@
 
     &__input--icon &__input-text {
         padding-right: 60px;
-    }
-
-    &__input:last-child{
-        margin-bottom: 0;
     }
 
     &__input-text:hover {
@@ -147,6 +146,10 @@
         display: flex;
         flex-wrap: wrap;
 
+        &__wrap {
+            padding: 0 64px;
+        }
+
         &__options {
             order: 1;
             padding-left: 64px;
@@ -165,6 +168,7 @@
         &__contacts {
             order: 3;
             width: 100%;
+            padding: 0 64px;
         }
         &__checkbox {
             order: 4;
@@ -172,6 +176,7 @@
         &__area {
             order: 5;
             width: 100%;
+            padding: 0 64px;    
         }
 
         &__options, &__name {
@@ -186,6 +191,10 @@
             margin-bottom: 34px;
             height: 52px;
         }
+
+        &__name &__input:last-child {
+            margin-bottom: 0;
+        }
     }
 
     @include desktop {
@@ -194,6 +203,7 @@
             display: flex;
             justify-content: space-between;
             width: 100%;
+            padding: 0 120px;
         }
 
         &__contacts-wrap {
@@ -205,12 +215,29 @@
             margin-right: 79px;
         }
 
+        &__input--column &__label {
+            margin: 0 auto;
+            margin-right: 16px;
+        }
+
         &__input--tel, &__input--email {
             display: flex;
         }
 
         &__input--column:last-child {
             margin-right: 0;
+        }
+
+        &__wrap {
+            padding: 0 120px;
+        }
+
+        &__label-tel {
+            display: none;
+        }
+
+        &__name &__input:last-child {
+            margin-bottom: 0;
         }
     }
 
