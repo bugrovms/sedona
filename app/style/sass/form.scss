@@ -353,7 +353,7 @@
         @include font(18px, 26px, bold);
     }
 
-    &__checkbox-label:before {
+    &__checkbox-label:before { 
         content: "";
         width: 46px;
         height: 46px;
