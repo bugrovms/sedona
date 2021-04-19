@@ -1,0 +1,59 @@
+.photos {
+
+    &__item {
+        padding: 22px 20px;
+    }
+
+    &__header {
+        margin-bottom: 40px;
+        @include font(18px, 26px, 700);
+        color: #000;
+    }
+
+    &__text {
+        @include font(14px, 24px, 400);
+        color: #333333;
+    }
+
+    &__header-wrap, &__footer-wrap {
+        text-align: center;
+        padding: 31px 10px 20px;
+    }
+
+    &__footer-wrap {
+        margin-bottom: 13px;
+    }
+
+    &__text, &__header {
+        text-transform: uppercase;
+    }
+
+    &__img-link {
+        vertical-align: top;
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        margin-bottom: 11px;
+    }
+
+    &__title {
+        margin-bottom: 13px;
+        @include font(18px, 26px, 700);
+        color: #000;
+    }
+
+    &__author {
+        margin-bottom: 15px;
+        @include font(14px, 24px, 400);
+        color: #333333;
+    }
+
+    &__author-name {
+        margin-left: 5px;
+    }
+
+    &__like {
+        @include font(14px, 24px, 400);
+    }
+
+}
